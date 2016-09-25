@@ -1,0 +1,36 @@
+.<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    #row div {
+      background: rgb(144, 144, 144);
+      height: 25px;
+      margin: 3px;
+      display: inline-block;
+      width: 25px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="row"></div>
+    <script>
+    //random position
+    function randomBinary(){
+      let max = 1
+      let min = 0
+    return Math.floor(Math.random() * (max - min + 1))
+    }
+     randomBinary()
+
+    //generate cells
+    for (var i = 0; i <=1000; i++) {
+      var div = document.createElement('div')
+      document.getElementById('row').appendChild(div)
+    }
+    </script>
+    <div></div>
+
+  </body>
+</html>
